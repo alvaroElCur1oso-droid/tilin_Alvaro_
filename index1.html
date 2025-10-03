@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alvaro Aguilar Rebatta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="estilos_y_videos/descarga.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f5ec; 
+    font-family: Gadugi;
+}
+
+h1 {
+    color: rgb(37, 37, 243);
+    text-align: center;
+    font-family: Bahnschrift;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 45px;
+    margin: 50px;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+
+li {
+    color: rgb(250, 49, 49);
+    font-size: 35px;
+    font-weight: bold;
+    margin: 20px;
+    margin-left: 1.5%;
+}
+
+p {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+video {
+    width: 50%;
+    height: 30%;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+ul>li {
+    font-weight: 400;
+    margin: 16px;
+    font-size: 20px;
+    color:black;
+}
+
+ol>li {
+    margin-left: 4.5%;
+}
+
+.proceso {
+    margin: auto;
+    margin-top: 20px;
+    font-family: Arial;
+    width: 50%;
+    height: 45%;
+    background: rgb(247, 247, 247);
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
+.imagen{
+    width: 94%;
+    height: 250px;
+    margin: 35px;
+    border-radius: 30px;    
+    background: url("estilos_y_videos/descarga.jpg") top / cover fixed no-repeat;
+
+}
+.gradiente{
+    width: 100%;
+    height: 250px;
+    border-radius: 30px;
+    background:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.884)) ;
+}
+
+.contacto{
+    text-align: center;
+    background: black;
+    width: 100%;
+    height:230px;
+    color:aliceblue;
+}
+
+nav{
+    height:20px;
+    padding: 20px;
+    background: rgb(116, 115, 115);
+}
+
+nav>p{
+    display:inline;
+    font-size: 9px;
+    text-align: center;
+}
+a{
+    color: #f4f5ec;
+}
+
+    </style>
+    <title>Pseint desde 0</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Aprende a programar con Pseint desde 0</h1>
+        <nav>           
+                <p><a href="#uno">¿Qué es PSeInt?</a></p>
+                <p><a href="#dos">Los Cimientos: Estructura, Variables y Tipos de Datos</a></p>
+                <p><a href="#tres">Interactuando con el Usuario: Entrada y Salida</a></p>
+                <p><a href="#cuatro">Lógica y Operadores: El Corazón del Programa</a></p>
+                <p><a href="#cinco">Controlando el Flujo: Condicionales y Bucles</a></p>
+                <p><a href="#seis">Estructuras de Datos Avanzadas: Arreglos</a></p>
+                <p><a href="#siete">Modularizando el Código: Subprocesos</a></p>
+                <p><a href="#ocho">Herramientas de Visualización y Depuración</a></p>
+            
+        </nav>
+    </header>
+    <main>
+        <ol type="I">
+            <li id="uno">¿Qué es PSeInt?</li>
+            <p>PSeInt es un intérprete de pseudocódigo que te permite escribir algoritmos en un lenguaje similar al
+                español.
+                Su nombre
+                viene de Pseudocódigo Se Intenta. Es ideal para estudiantes que están aprendiendo los fundamentos de la
+                programación,
+                como variables, estructuras de control y operadores.</p>
+            <h2>Video de como Descargar PSeInt:</h2>
+            <center><video src="estilos_y_videos/DESCARGAR-PSEINT_v720P.mp4" controls loop muted></video></center>
+            <li id="dos">Los Cimientos: Estructura, Variables y Tipos de Datos</li>
+            <p>Antes de escribir cualquier código, es fundamental entender la estructura y cómo se guardan los datos.
+            </p>
+            <h2>La Estructura de un Algoritmo</h2>
+            <p>Todo programa en PSeInt empieza y termina de la misma manera. Es tu lienzo en blanco.</p>
+            <div class="proceso">
+                <pre>
+
+Proceso NombreDelAlgoritmo
+    // Aquí es donde sucede la magia:
+    // Puedes definir variables, pedir datos,
+    // hacer cálculos y mostrar resultados.
+FinProceso
+                </pre>
+            </div>
+            <div class="imagen">
+                <div class="gradiente">
+
+                </div>
+            </div>
+
+            <h2>Variables y Tipos de Datos</h2>
+            <p>Las variables son como cajas en la memoria de la computadora donde puedes guardar información. Cada caja
+                solo
+                puede guardar un tipo específico de cosa. Para crear una, usas el comando Definir.</p>
+            <ul>
+                <li>Entero: Números sin decimales (1, 100, -5).</li>
+                <li>Real: Números con decimales (3.14, 0.5, -99.9).</li>
+                <li>Caracter: Un solo carácter o una cadena de texto ( "Hola", "a", "Este es un ejemplo" ).</li>
+                <li>Logico: Solo puede tener dos valores: Verdadero o Falso. Es esencial para tomar decisiones.</li>
+            </ul>
+            <div class="proceso">
+                <pre>
+Proceso NombreDelAlgoritmo
+    // Asignamos valores a las variables
+    edad <- 25;
+    precio <- 19.99;
+    nombre <- "Ana";
+
+    // Un ejemplo con el tipo Lógico
+    esMayorDeEdad <- (edad >= 18); // Esto asignará Verdadero
+
+    Escribir "Nombre: ", nombre;
+    Escribir "Edad: ", edad;
+    Escribir "Es mayor de edad: ", esMayorDeEdad;
+FinProceso
+                    </pre>
+            </div>
+            <div class="imagen">
+                <div class="gradiente">
+
+                </div>
+            </div>
+            <li id="tres">Interactuando con el Usuario: Entrada y Salida</li>
+            <p>Un programa es útil cuando puede comunicarse. Escribir y Leer son tus comandos para hacerlo.</p>
+            <ul>
+                <li>Escribir: Muestra un mensaje en pantalla. Puedes combinar texto (entre comillas) con el valor de las
+                    variables
+                    usando comas.</li>
+                <li>Escribir Sin Saltar: Similar a Escribir, pero no agrega un salto de línea al final, lo que es útil
+                    para
+                    crear
+                    tablas o menús.</li>
+                <li>Leer: Pide al usuario que ingrese un valor y lo guarda en una variable.</li>
+            </ul>
+            <div class="proceso">
+                <pre>
+Proceso SaludoPersonalizado
+    Definir nombre Como Caracter;
+    Escribir "Por favor, escribe tu nombre:";
+    Leer nombre;
+    Escribir "¡Hola, ", nombre, "! Bienvenido a PSeInt.";
+FinProceso
+                </pre>
+            </div>
+              <div class="imagen">
+                <div class="gradiente">
+
+                </div>
+            </div>
+            <li id="cuatro">Lógica y Operadores: El Corazón del Programa</li>
+            <p>Los operadores te permiten hacer cálculos y comparar valores.</p>
+            <ul>
+                <li>Aritméticos: Para cálculos matemáticos.</li>
+                <ul>
+                    <li>+, -, *, /: Suma, resta, multiplicación, división.</li>
+                    <li>^: Potencia.</li>
+                    <li>%: Módulo (devuelve el residuo de una división).</li>
+                </ul>
+                <li>Relacionales: Para comparar valores. El resultado siempre es Verdadero o Falso.</li>
+                <ul>
+                    <li>>, <: Mayor que, menor que.</li>
+                    <li>>=, <=: Mayor o igual, menor o igual.</li>
+                    <li>==: Igual a.</li>
+                    <li>
+                        <>: Diferente de.
+                    </li>
+                </ul>
+                <li>Lógicos: Para combinar condiciones.</li>
+                <ul>
+                    <li>Y: condicion1 Y condicion2 es Verdadero solo si ambas son Verdadero.</li>
+                    <li>O: condicion1 O condicion2 es Verdadero si al menos una es Verdadero.</li>
+                    <li>No: Invierte el valor lógico (No Verdadero es Falso).</li>
+                </ul>
+            </ul>
+             <div class="imagen">
+                <div class="gradiente">
+
+                </div>
+            </div>
+            <li id="cinco">Controlando el Flujo: Condicionales y Bucles</li>
+            <p>Estos comandos son lo que le da "inteligencia" a un programa, permitiéndole tomar decisiones y repetir
+                tareas.</p>
+            <h2>Decidiendo con Si, SinoSi y Según</h2>
+            <ul>
+                <li>Decidiendo con Si, SinoSi y Según</li>
+                <li>SinoSi: Una extensión del Si. Te permite evaluar múltiples condiciones de forma ordenada.</li>
+                <li>Según: Ideal cuando tienes una variable que puede tener muchos valores fijos.</li>
+            </ul>
+            <div class="proceso">
+                <pre>
+Proceso EjemploDecision
+    Definir nota Como Entero;
+    Escribir "Ingresa tu nota (1-10):";
+    Leer nota;
+
+    Si nota >= 9 Entonces
+        Escribir "Excelente, tu nota es sobresaliente.";
+    SinoSi nota >= 7 Entonces
+        Escribir "Muy bien, tu nota es buena.";
+    Sino
+        Escribir "Necesitas mejorar.";
+    FinSi
+FinProceso
+            </pre>
+            </div>
+             <div class="imagen">
+                <div class="gradiente">
+
+                </div>
+            </div>
+            <h2>Repitiendo Tareas con Para, Mientras y Repetir</h2>
+            <ul>
+                <li>Para: Úsalo cuando sabes exactamente cuántas veces quieres repetir algo. Es perfecto para recorrer
+                    listas de datos.</li>
+                <li>Mientras: Repite un bloque de código mientras la condición sea Verdadero. La condición se verifica
+                    al
+                    inicio, así que si
+                    es falsa desde el principio, el código nunca se ejecuta.</li>
+                <li>Repetir-Hasta Que: Similar a Mientras, pero la condición se verifica al final. Esto garantiza que el
+                    código se ejecute
+                    al menos una vez.</li>
+            </ul>
+            <li id="seis">Estructuras de Datos Avanzadas: Arreglos</li>
+            <p>Un arreglo es una variable que puede almacenar una lista de valores del mismo tipo. Es como una
+                estantería
+                con varias casillas numeradas.</p>
+            <ul>
+                <li>Vectores: Son arreglos de una sola dimensión (una lista). Se declaran con Dimension.</li>
+                <li>Matrices: Son arreglos de dos dimensiones (una tabla).</li>
+            </ul>
+            <div class="proceso">
+                <pre>
+Proceso EjemploVectores
+    // Creamos un vector para 5 notas
+    Dimension notas[5];
+    Definir i Como Entero;
+
+    // Llenamos el vector pidiéndole al usuario las notas
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Escribir "Ingresa la nota ", i, ":";
+        Leer notas[i];
+    FinPara
+
+    // Calculamos el promedio
+    Definir suma Como Real;
+    suma <- 0;
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        suma <- suma + notas[i];
+    FinPara
+
+    Escribir "El promedio de las notas es: ", suma / 5;
+FinProceso
+            </pre>
+            </div>
+              <div class="imagen">
+                <div class="gradiente">
+
+                </div>
+            </div>
+            <li id="siete">Modularizando el Código: Subprocesos</li>
+            <p>Cuando tu programa crece, se vuelve difícil de manejar. Los subprocesos te permiten dividir el código en
+                tareas más pequeñas
+                y reutilizables, como si fueran mini-programas.</p>
+            <ul>
+                <li>Procedimientos: Realizan una tarea pero no devuelven un valor. Son perfectos para mostrar un mensaje
+                    o
+                    un menú.</li>
+                <li>Funciones: Realizan una tarea y devuelven un valor. Son ideales para cálculos.</li>
+            </ul>
+            <div class="proceso">
+                <pre>
+// Un Subproceso (Función) que calcula el área de un círculo
+SubProceso resultado <- CalcularArea(radio)
+    Definir PI Como Real;
+    PI <- 3.14159;
+    resultado <- PI * radio * radio;
+FinSubProceso
+
+// El proceso principal que usa la función
+Proceso UsarFuncion
+    Definir radio_circulo, area Como Real;
+    Escribir "Ingresa el radio del círculo:";
+    Leer radio_circulo;
+
+    // Llamamos a la función y guardamos el resultado
+    area <- CalcularArea(radio_circulo);
+
+    Escribir "El área del círculo es: ", area;
+FinProceso
+                </pre>
+            </div>
+            <div class="imagen">
+                <div class="gradiente">
+
+                </div>
+            </div>
+
+            <li id="ocho">Herramientas de Visualización y Depuración</li>
+            <p>PSeInt tiene dos características que lo hacen inigualable para aprender:</p>
+            <ul>
+                <li>Diagrama de Flujo: Haz clic en el ícono del diagrama de flujo en la barra de herramientas. Esto
+                    generará
+                    una representación
+                    visual de tu programa. Verás bloques, flechas y decisiones. Es la forma más clara de entender la
+                    lógica
+                    de un algoritmo.</li>
+                <li>Ejecutar Paso a Paso: Haz clic en el ícono de las huellas de un pie. Esto ejecutará tu código línea
+                    por
+                    línea, mostrándote
+                    exactamente qué hace el programa y cómo cambian los valores de las variables. Es una herramienta
+                    poderosa para encontrar errores.</li>
+            </ul>
+        </ol>
+        <h2>video completo de PSeInt</h2>
+       <center> <video src="estilos_y_videos/PseInt 2025.mp4" controls autoplay muted loop></video></center>
+    </main>
+    <footer>
+        <div class="contacto">
+            <p>contacto:</p>
+            <a href="https://wa.me/qr/USJJZN4R7332H1" target="_blank" rel="noopener noreferrer">Contacto de whatsapp</a>
+            <p>Descargar:</p>
+            <a href="PROYECTO_LERZUNDI.html" download="Pagina secundaria">Descargar Pagina Web</a>
+        </div>
+    </footer>
+</body>
+
+</html>
